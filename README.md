@@ -40,3 +40,6 @@ The OOP concepts used in my project are as follows:
 
 6. Association: We establish associations between classes through methods and attributes. For example, a `Student` is associated with `Course` objects via enrollment. This relationship showcases how different entities interact within our system, allowing us to model the complexities of our application more effectively.
 
+
+NOTE: UML diagrams are inside the submitted zip folder.
+
