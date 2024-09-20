@@ -1,10 +1,10 @@
 How to Run the Code:
-Save all your Java files in a single folder.
-Open the terminal and navigate to that folder.
-Compile the files by typing: javac *.java
-Run the program by typing: java Main
+1. Save all your Java files in a single folder.
+2. Open the terminal and navigate to that folder.
+3. Compile the files by typing: javac *.java
+4. Run the program by typing: java Main
 
-**Note:** The Main class already contains predefined data, which can be modified if needed for evaluating the functionality of the code.
+Note: The Main class already contains predefined data, which can be modified if needed for evaluating the functionality of the code.
 
 
 Limitations: Due to tight deadlines, time constraints hindered the development of a more comprehensive and realistic Course Management System:
