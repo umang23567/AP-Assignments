@@ -28,10 +28,10 @@ Improvement: Instead of relying on string comparison, we could consider using un
 My Code Structure:
 1. Main Class: The entry point of the application, containing pre-fed data for testing and demonstration.
 2. User Classes:
-   -User: An abstract base class defining common attributes (email, password) and methods.
-   -Student: Inherits from User and includes attributes specific to students, such as GPA and enrolled courses.
-   -Professor: Inherits from User and manages courses taught, enrolled students, and course details.
-   -Administrator: Inherits from User and oversees the overall system functionality.
+   a. User: An abstract base class defining common attributes (email, password) and methods.
+   b. Student: Inherits from User and includes attributes specific to students, such as GPA and enrolled courses.
+   c. Professor: Inherits from User and manages courses taught, enrolled students, and course details.
+   d. Administrator: Inherits from User and oversees the overall system functionality.
 3. Course Class: Represents a course, including attributes like course code, name, credits, timings, syllabus, office hours, and a list of enrolled students.
 4. Complaint Class: Manages complaints submitted by students to the administrator.
 
