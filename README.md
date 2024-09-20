@@ -5,9 +5,8 @@ How to Run the Code:
 3. Compile the files by typing: javac *.java
 4. Run the program by typing: java Main
 
-
-Note: The Main class already contains predefined data, which can be modified if needed for evaluating the functionality of the code.
-
+Note: The `Main` class contains predefined data (raw data from the course system database). 
+This data can be modified, if necessary, by anyone evaluating the functionality of the code.
 
 Limitations: Due to tight deadlines, time constraints hindered the development of a more comprehensive and realistic Course Management System:
 
