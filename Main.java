@@ -229,7 +229,8 @@ public class Main
         boolean loggedIn = true;
 
         while (loggedIn) 
-        {
+        {   
+            admin=Administrator.getAdmin("admin@mail.com","adminpass");
             System.out.println("\nAdministrator Mode:");
             System.out.println("1. View Courses");
             System.out.println("2. Manage Course Catalog");
