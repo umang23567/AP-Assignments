@@ -25,6 +25,15 @@ Improvement: We could consider using more efficient data structures, like hash m
 Limitation: Inputs such as professor names and course codes are manually compared using strings, which can lead to issues if users provide inputs in different formats, such as variations in casing or spacing.
 Improvement: Instead of relying on string comparison, we could consider using unique identifiers for each entity to ensure more reliable lookups and avoid errors caused by formatting discrepancies.
 
+My Code Structure:
+Main Class: The entry point of the application, containing pre-fed data for testing and demonstration.
+User Classes:
+User: An abstract base class defining common attributes (email, password) and methods.
+Student: Inherits from User and includes attributes specific to students, such as GPA and enrolled courses.
+Professor: Inherits from User and manages courses taught, enrolled students, and course details.
+Administrator: Inherits from User and oversees the overall system functionality.
+Course Class: Represents a course, including attributes like course code, name, credits, timings, syllabus, office hours, and a list of enrolled students.
+Complaint Class: Manages complaints submitted by students to the administrator.
 
 The OOP concepts used in my project are as follows:
 
