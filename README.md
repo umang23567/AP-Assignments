@@ -12,7 +12,7 @@ This project operates under a few key assumptions. The assumptions have been mad
 ### Assumption 2: Product Availability
 - The system assumes an **infinite supply** of items when their availability is set to `YES`. 
 - When availability is set to `NO`, the system treats future supply as `0`.
-- 
+  
 ### Assumption 3: Order Cancellation
 Order can be cancelled while in pending or preparing state, else cannot be cancelled.
 
