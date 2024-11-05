@@ -102,4 +102,53 @@ This system includes the following roles and features:
 - **Order**: Represents an individual order with tracking information.
 - **Admin/User Interfaces**: Separates admin and user functionality for easier management of roles.
 
+Here’s a text for your README or documentation that explains the hardcoded data in your application and encourages users to customize it according to their requirements:
+
+---
+
+### Hardcoded Data
+
+In the current implementation of the application, some sample data has been hardcoded for demonstration purposes. This includes predefined menu items and customer accounts, allowing users to quickly see how the application functions without needing to input data manually.
+
+#### Sample Menu Items:
+```java
+menu.put("Pizza", new FoodItem("Pizza", 200, "Fast food"));
+menu.put("Burger", new FoodItem("Burger", 50, "Fast food"));
+menu.put("Dosa", new FoodItem("Dosa", 80, "South Indian"));
+menu.put("Idli", new FoodItem("Idli", 40, "South Indian"));
+```
+
+The menu features a selection of popular food items categorized as "Fast food" and "South Indian." Each item is initialized with a name, price, and category.
+
+#### Sample Customer Accounts:
+```java
+customers.add(new Customer("c1@mail.com", "c1", "customer1", "VIP"));
+customers.add(new Customer("c2@mail.com", "c2", "customer2", "Regular"));
+customers.add(new Customer("c3@mail.com", "c3", "customer3", "Regular"));
+```
+
+Three sample customers are included in the system, each with an email, password, username, and membership status (either "VIP" or "Regular").
+
+### Customization
+
+Users are encouraged to modify this hardcoded data to suit their specific requirements. You can add, remove, or change menu items and customer details as needed. This allows for greater flexibility and ensures that the application can be tailored to your personal or business needs.
+
+To modify the hardcoded data, simply navigate to the relevant sections of the code within the **Admin** and **Main** classes. Here, you can change the existing items or add new ones based on your preferences.
+
+For example, to add a new food item, you could do something like this:
+
+```java
+menu.put("Pasta", new FoodItem("Pasta", 150, "Italian"));
+```
+
+Similarly, to add a new customer, you might write:
+
+```java
+customers.add(new Customer("c4@mail.com", "c4", "customer4", "Regular"));
+```
+
+Feel free to experiment and expand the menu and customer lists to enhance the functionality of the application!
+
+--- 
+
 
