@@ -265,7 +265,14 @@ public class Customer extends User
                 System.out.print("Enter quantity: ");
                 int quantity = scanner.nextInt();
                 scanner.nextLine();
-                cart.addItem(selectedItem, quantity);
+                if (quantity>0)
+                {
+                    cart.addItem(selectedItem, quantity);
+                }
+                else
+                {
+                    System.out.println("Positive quantity needed.");
+                }
             }
             else
             {
