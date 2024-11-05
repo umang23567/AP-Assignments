@@ -65,9 +65,9 @@ Future development could include CSV-based or database storage for persistent da
    javac *.java
    ```
 
-3. Run the main application:
+3. Run the  application:
    ```bash
-   java Main
+   java ByteMeApp
    ```
 
 ---
