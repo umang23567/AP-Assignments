@@ -104,7 +104,7 @@ This system includes the following roles and features:
 
 ---
 
-#### Hardcoded Data
+## Hardcoded Data
 
 In the current implementation of the application, some sample data has been hardcoded for demonstration purposes. This includes predefined menu items and customer accounts, allowing users to quickly see how the application functions without needing to input data manually.
 
