@@ -91,32 +91,6 @@ This system includes the following roles and features:
 - **Cancel Order**: Cancel an order if it is still in a Pending or Preparing state.
 - **Leave Feedback**: Provide feedback and ratings for items, affecting the overall item rating.
 
-### Example Commands
-
-Here are some sample commands you can run in the system:
-
-1. **Add Item to Cart**:
-   ```java
-   Cart cart = new Cart();
-   cart.addItem(new FoodItem("Burger", 5.99, "Fast Food"), 2);
-   ```
-
-2. **Place an Order**:
-   ```java
-   Order order = new Order(cart.getTotal(), cart.getItems(), true, LocalDateTime.now());
-   ```
-
-3. **Update Item Availability (Admin)**:
-   ```java
-   FoodItem item = new FoodItem("Pizza", 8.99, "Fast Food");
-   item.changeAvailability(false);
-   ```
-
-4. **Add Feedback for Item**:
-   ```java
-   item.addFeedback(4, "Delicious and well-cooked.");
-   ```
-
 ---
 
 ## Classes Overview
@@ -126,19 +100,6 @@ Here are some sample commands you can run in the system:
 - **Cart**: Manages items selected by the user for purchase.
 - **Order**: Represents an individual order with tracking information.
 - **Admin/User Interfaces**: Separates admin and user functionality for easier management of roles.
-
----
-
-## Limitations
-
-- **Session-Based Data**: All data is lost when the application terminates. Persistent storage (e.g., CSV or database) could be implemented in future versions.
-- **No Payment System Integration**: This is a simplified system without actual payment processing or refund automation.
-
----
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
 ---
 
