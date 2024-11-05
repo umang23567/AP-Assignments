@@ -40,7 +40,7 @@ Orders can be canceled only if they are in a **Pending** or **Preparing** state.
 
 ### Assumption 4: Payment and Refunds
 - There is no **Cash on Delivery (COD)** option, and the total sales amount is recorded immediately when an order is placed.
-- Refunds, if necessary, will be managed manually by the admin.
+- Refunds, if necessary, will later be managed manually by the admin.
 
 ### Assumption 5: Admin Controls
 - Admin price updates for items **do not retroactively affect previous orders**.
