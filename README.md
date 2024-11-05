@@ -26,10 +26,10 @@ The primary classes and features include:
 
 ## Assumptions
 
-This project operates under the following key assumptions for simplicity:
+This project operates under a few key assumptions. The assumptions have been made in certain cases which were not explicitly detailed in the assignment documentation or class comments.
 
 ### Assumption 1: User Input
-The system assumes that users will provide **logical and valid inputs** for smooth operation without unexpected interruptions or errors.
+The system assumes that users will provide logical and valid inputs for smooth operation without unexpected interruptions or errors.
 
 ### Assumption 2: Product Availability
 - Items marked as **available** (availability set to `YES`) are assumed to have an **infinite supply**.
@@ -39,7 +39,7 @@ The system assumes that users will provide **logical and valid inputs** for smoo
 Orders can be canceled only if they are in a **Pending** or **Preparing** state. Once orders reach the Dispatched, Delivered, or Completed stage, they cannot be canceled.
 
 ### Assumption 4: Payment and Refunds
-- There is no **Cash on Delivery (COD)** option, and the total sales amount is recorded immediately when an order is placed.
+- There is no Cash on Delivery option and payment is made during checkout, hence the total sales amount is recorded immediately when an order is placed.
 - Refunds, if necessary, will later be managed manually by the admin.
 
 ### Assumption 5: Admin Controls
@@ -47,7 +47,8 @@ Orders can be canceled only if they are in a **Pending** or **Preparing** state.
 - If the admin removes an item from the inventory, it will automatically be removed from all active user carts.
 
 ### Temporary Data Storage
-This project uses hardcoded data for demonstration purposes, which **resets after each session**. Future development could include CSV-based or database storage for persistent data.
+This project uses hardcoded data for demonstration purposes, however, any changes to this data are temporary and are lost once the terminal session ends. 
+Future development could include CSV-based or database storage for persistent data.
 
 ---
 
@@ -101,15 +102,4 @@ This system includes the following roles and features:
 - **Order**: Represents an individual order with tracking information.
 - **Admin/User Interfaces**: Separates admin and user functionality for easier management of roles.
 
----
 
-## Future Enhancements
-
-1. **Persistent Storage**: Integrate CSV or database storage to retain data across sessions.
-2. **User Authentication**: Implement login features to differentiate between users and admins.
-3. **Enhanced Order Tracking**: Add more detailed order-tracking stages and automated notifications.
-4. **Integration with Payment API**: Incorporate a payment gateway for real transactions and automated refunds.
-
----
-
-This README provides a comprehensive overview of the system, setup instructions, and usage examples. Please refer to the source code for more in-depth details on each class.
