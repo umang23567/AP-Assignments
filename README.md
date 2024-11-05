@@ -102,8 +102,6 @@ This system includes the following roles and features:
 - **Order**: Represents an individual order with tracking information.
 - **Admin/User Interfaces**: Separates admin and user functionality for easier management of roles.
 
-Here’s a text for your README or documentation that explains the hardcoded data in your application and encourages users to customize it according to their requirements:
-
 ---
 
 ### Hardcoded Data
