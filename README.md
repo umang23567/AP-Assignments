@@ -46,14 +46,25 @@ JUnit tests validate the system's behavior when incorrect login credentials are 
 - For consistency, data is cleared or reset between tests using `@BeforeEach` to ensure isolated testing.  
 - Temporary data is used during tests to prevent interference with serialized files or existing system state.
 
-
-
-##### **Persistence**  
-- Data is serialized into `.dat` files:
+#### **File Management and Persistence**  
+- **Serialized Data**:  
+  The application uses Java's `ObjectOutputStream` and `ObjectInputStream` to handle data persistence. The `.dat` files are binary files and not human-readable.
   - `admin.dat`: Contains the serialized `Admin` instance with all associated data (menu, orders, etc.).  
-  - `customers.dat`: Contains a `TreeSet<Customer>` with all customer information and their associated data (order history, cart).  
+  - `customers.dat`: Contains a `TreeSet<Customer>` with all customer information and their associated data 
+
+- **Loading Data**:  
+  At startup, the system deserializes the `admin.dat` and `customers.dat` files to restore all data.  
+  Example:
+  ```java
+  private static Admin admin = SerializationManager.loadAdmin();
+  private static TreeSet<Customer> customers = SerializationManager.loadCustomers();
+  ```
+
+- **Saving Data**:  
+  All changes to the `Admin` and `Customer` objects are saved back to their respective `.dat` files on program exit.
 
 ---
+
 
 #### **Data Inspection with DatFileInspector**  
 The `DatFileInspector` utility helps inspect the serialized `.dat` files for debugging or verification purposes. It deserializes the objects stored in the files and prints their details in a structured format.  
@@ -68,22 +79,7 @@ The `DatFileInspector` utility helps inspect the serialized `.dat` files for deb
 
 
 
-#### **File Management and Persistence**  
-- **Serialized Data**:  
-  The application uses Java's `ObjectOutputStream` and `ObjectInputStream` to handle data persistence. The `.dat` files are binary files and not human-readable.  
 
-- **Loading Data**:  
-  At startup, the system deserializes the `admin.dat` and `customers.dat` files to restore all data.  
-  Example:
-  ```java
-  private static Admin admin = SerializationManager.loadAdmin();
-  private static TreeSet<Customer> customers = SerializationManager.loadCustomers();
-  ```
-
-- **Saving Data**:  
-  All changes to the `Admin` and `Customer` objects are saved back to their respective `.dat` files on program exit.
-
----
 
 #### **How to Run the Application**  
 1. Compile and run the `ByteMeApp` class:
