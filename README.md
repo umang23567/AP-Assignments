@@ -7,30 +7,6 @@ Byte Me! is a food ordering system that provides a comprehensive platform for ma
 
 ---
 
-#### **Features**  
-
-##### **Admin Functionality**  
-- **Menu Management**:  
-  - Add, update, browse, or remove menu items via CLI.  
-  - Launch a GUI for menu browsing, which can be re-triggered from the CLI for updated views.  
-
-- **Order Management**:  
-  - View and manage pending orders via CLI. The GUI includes a refresh button to update the displayed data without restarting the application.  
-
-- **Report Generation**:  
-  - Generate daily sales reports based on completed orders.  
-
-##### **Customer Functionality**  
-- **Menu Browsing**:  
-  - Browse, search, filter, and sort menu items via CLI or GUI.  
-- **Cart Management**:  
-  - Add, modify, and remove items from the cart.  
-  - Checkout and place orders.  
-- **Order Tracking**:  
-  - Track and cancel orders.  
-- **Item Reviews**:  
-  - Provide feedback and view item ratings.  
-
 ##### **Persistence**  
 - Data is serialized into `.dat` files:
   - `admin.dat`: Contains the serialized `Admin` instance with all associated data (menu, orders, etc.).  
