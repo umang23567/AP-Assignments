@@ -23,12 +23,12 @@ The **Pending Orders GUI** displays a table of orders currently in a pending or 
 ### **JUnit Testing**
 
 #### 1. **Testing Ordering Out-of-Stock Items**  
-JUnit tests simulate the scenario where a customer attempts to order items that are marked as out of stock.  
+JUnit tests simulate the scenario where a customer attempts to order items that are marked as unavailable.  
 - The test ensures the following:  
   1. An appropriate error message is shown to the user.  
   2. The system prevents the order from being added to the admin's order history.  
 - **Test Flow**:  
-  - Add an out-of-stock item to the cart.  
+  - Add an unavailable item to the cart.  
   - Attempt to proceed to checkout.  
   - Verify that an exception is thrown and no order is processed.  
 
@@ -45,6 +45,7 @@ JUnit tests validate the system's behavior when incorrect login credentials are 
 #### **Testing Notes**:  
 - For consistency, data is cleared or reset between tests using `@BeforeEach` to ensure isolated testing.  
 - Temporary data is used during tests to prevent interference with serialized files or existing system state.
+
 
 #### **File Management and Persistence**  
 - **Serialized Data**:  
