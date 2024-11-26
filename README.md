@@ -46,8 +46,9 @@ JUnit tests validate the system's behavior when incorrect login credentials are 
 - For consistency, data is cleared or reset between tests using `@BeforeEach` to ensure isolated testing.  
 - Temporary data is used during tests to prevent interference with serialized files or existing system state.
 
+---
 
-#### **File Management and Persistence**  
+### **File Management and Persistence**  
 - **Serialized Data**:  
   The application uses Java's `ObjectOutputStream` and `ObjectInputStream` to handle data persistence. The `.dat` files are binary files and not human-readable.
   - `admin.dat`: Contains the serialized `Admin` instance with all associated data (menu, orders, etc.).  
