@@ -73,15 +73,14 @@ The `DatFileInspector` utility helps inspect the serialized `.dat` files for deb
 
 **Steps to Use DatFileInspector**:  
 1. Ensure the `.dat` files (`admin.dat` and `customers.dat`) are present in the application's working directory.  
-2. Run the `DatFileInspector` program:  
+2. Compile and run the `DatFileInspector` class:
    ```bash
+   javac DatFileInspector.java
    java DatFileInspector
-   ```  
+   ```
 3. The program prints the contents of the files, including all nested objects like orders, menu items, and cart contents.  
 
-
-
-
+---
 
 #### **How to Run the Application**  
 1. Compile and run the `ByteMeApp` class:
@@ -94,13 +93,7 @@ The `DatFileInspector` utility helps inspect the serialized `.dat` files for deb
 
 ---
 
-#### **How to Run DatFileInspector**  
-1. Compile and run the `DatFileInspector` class:
-   ```bash
-   javac DatFileInspector.java
-   java DatFileInspector
-   ```
-2. Inspect the contents of the serialized files (`admin.dat` and `customers.dat`).  
+
 
 --- 
 
