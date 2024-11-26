@@ -15,7 +15,7 @@ Byte Me! is a food ordering system that provides a comprehensive platform for ma
   - Launch a GUI for menu browsing, which can be re-triggered from the CLI for updated views.  
 
 - **Order Management**:  
-  - View and manage pending orders via a GUI or CLI. The GUI includes a refresh button to update the displayed data without restarting the application.  
+  - View and manage pending orders via CLI. The GUI includes a refresh button to update the displayed data without restarting the application.  
 
 - **Report Generation**:  
   - Generate daily sales reports based on completed orders.  
